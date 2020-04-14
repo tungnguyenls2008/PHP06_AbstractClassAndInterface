@@ -32,3 +32,4 @@ echo 'Rectangle area resized: ' . $rectangle->resize($percentage) . '<br />';
 echo 'Rectangle perimeter resized: ' . $rectangle->resize($percentage) . '<br />';
 
 echo 'Square area: ' . $square->resize($percentage) . '<br />';
+echo $square->howToColor();

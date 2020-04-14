@@ -1,8 +1,9 @@
 <?php
 include_once "Resizeable.php";
+include_once "Colorable.php";
 include_once('Rectangle.php');
 
-class Square extends Shape implements Resizeable
+class Square extends Shape implements Resizeable,Colorable
 {
     public $width;
 
@@ -20,5 +21,10 @@ class Square extends Shape implements Resizeable
     public function resize($percentage)
     {
         return $this->calculateArea() + ($this->calculateArea() * $percentage) / 100;
+    }
+
+    public function howToColor()
+    {
+        echo "Color all four sizes";
     }
 }
